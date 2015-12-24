@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{font:12px/1.5 Tahoma;text-align:center;}
+	input,button{font-family:inherit;}
+	input{border:1px solid #ccc;padding:3px;}
+	button{cursor:pointer;}
+	</style>
+</head>
+<body>
+	<p><input type="text" value="123"></p>
+	<p><input type="text" value="123"></p>
+	<p><button>传参</button></p>
+	<script type="text/javascript">
+		function test(a) {
+			alert(a);
+		}
+		window.onload = function() {
+			var oInput = document.getElementsByTagName('input');
+			var oButton = document.getElementsByTagName('button')[0];
+			oButton.onclick = function() {
+				for (var i = 0; i < oInput.length; i++) {
+					test(oInput[i].value);
+				}		
+			};			
+		};
+	</script>
+</body>
+</html>

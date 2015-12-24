@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">       
+    <title>Insert title here</title>
+</head>
+<body>
+    
+
+  	<script type="text/javascript">
+//name=value应该是cookie中必须的且是第一条语句，所以后面的语句无论存在与否都不考虑
+ 		function getCookies() {
+ 			var aCookie = document.cookie,
+ 				equal = encodeURIComponent("="),               //URI编码后的=
+ 				equalSite = aCookie.indexOf(equal),            //第一个=的位置
+ 				cookieName = null,                             //name
+ 				cookieValue = null;				//value
+
+ 			var end = aCookie.indexOf(";",equalSite);    //name=value的结束位置（分号位置）	
+ 			if (end == -1) {
+ 					end = aCookie.length;          //cookie里只有一个name=value的情况
+ 				}
+
+ 			cookieName = decodeURIComponent(aCookie.substring(0,equalSite)); //提取=之前的值，即name
+ 			cookieValue = decodeURIComponent(aCookie.substring(equalSite+1,end));//提取=之后的值 ，即value
+ 			
+
+ 			return {cookieName:cookieValue};
+ 		}
+  	</script>
+</body>
+</html>

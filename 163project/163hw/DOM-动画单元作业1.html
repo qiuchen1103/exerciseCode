@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>淡出效果动画</title>
+	<style type="text/css">
+		div{
+			background-color: blue;
+			width: 500px;
+			height: 500px;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="fadeout"></div>
+ 	<script type="text/javascript">
+ 		
+ 		var fadeout = document.getElementById("fadeout");
+ 		var i = 1;
+
+ 		window.onload = function() {
+ 			time = setInterval(
+ 				function(){
+ 					update();
+ 				},
+ 				100
+ 			)
+ 		}
+ 		
+ 		function update() {
+ 			i = i - 0.1;
+ 			fadeout.style.opacity = i;
+ 			
+ 			if (i < 0) {
+ 				clearInterval(time);
+ 			};
+ 		}
+ 	
+
+ 	</script>
+</body>
+</html>

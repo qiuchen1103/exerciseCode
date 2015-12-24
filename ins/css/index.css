@@ -1,0 +1,34 @@
+body,html{
+	background: rgb(220,224,230);
+	/*width: 100%;
+	height: 100%;*/
+}
+
+.fp-viewing-1-0{
+	background: rgb(220,224,230);
+}
+
+#chart1{
+	background-color: rgb(220,224,230);
+	padding: 10px;
+	outline: rgb(220,230,224) outset 3px;
+	width: 70%;
+	height: 65%; 
+	margin: 0 auto;
+}
+#chart2{
+	background-color: rgb(220,224,230);
+	padding: 10px;
+	outline: rgb(220,230,224) outset 3px;
+	width: 70%;
+	height: 65%; 
+	margin: 0 auto;
+}
+#chart3{
+	background-color: rgb(220,224,230);
+	padding: 10px;
+	outline: rgb(220,230,224) outset 3px;
+	width: 70%;
+	height: 65%; 
+	margin: 0 auto;
+}

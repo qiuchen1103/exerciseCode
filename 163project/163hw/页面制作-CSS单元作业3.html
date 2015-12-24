@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style type="text/css">
+		.slide{
+			width: 200px;
+			height: 100px;
+			position: relative;
+			background-color: #79a3e1;
+		}
+		.pointer{
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			line-height: 0;
+		}
+		i{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+            margin-left: 5px;
+            border-radius: 50%;
+			background-color: #000;
+		}
+		i.current{
+			background-color: #fff;
+		}
+    </style>
+</head>
+<body>
+	<div class="slide">
+	<!-- 图片省略 -->
+	<!-- 以下是指示器 -->
+	<div class="pointer"><i class="current"></i><i></i><i></i></div>
+	</div>
+</body>
+</html>

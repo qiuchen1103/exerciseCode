@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ball</title>
+	<style type="text/css">
+		#ball{
+			display: block;
+			margin: 10% auto;
+			border-style: solid;
+			border-width: 1px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="ball" width="500" height="350">
+		艾玛，你还在用那么老的浏览器，快更新吧...
+	</canvas>
+
+
+	<script type="text/javascript">
+		var ball = {x:450,y:50,r:10,g:2,vx:-4,vy:0,color:"#058"};
+		var canvas = document.getElementById("ball");
+		var context = canvas.getContext("2d");
+		
+		window.onload = function() {
+			setInterval(
+				function() {
+					render(context);
+					update();
+				},
+				50
+			)
+		}
+
+		function render(cxt) {
+			cxt.clearRect(0,0,cxt.canvas.width,cxt.canvas.height);
+
+			cxt.fillStyle = ball.color;
+			cxt.beginPath();
+			cxt.arc(ball.x,ball.y,ball.r,0,2*Math.PI);
+			cxt.closePath();
+			cxt.fill();
+		}
+
+		function update() {
+			ball.x += ball.vx;
+			ball.y += ball.vy;
+			ball.vy += ball.g;
+
+			//触底反弹
+			if (ball.y >= context.canvas.height-ball.r) {
+				ball.y = context.canvas.height-ball.r;
+				ball.vy = -ball.vy*0.6;//空气阻力系数
+			};
+
+			if (ball.x <= 0+ball.r) {
+				ball.x = 0+ball.r;
+				ball.vx = -ball.vy*0.8;
+			};
+		}
+	</script>
+</body>
+</html>

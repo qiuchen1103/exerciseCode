@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS类型系统作业</title>
+</head>
+
+<body>
+	<script>
+		function type(obj){
+			return Object.prototype.toString.call(obj).slice(8,-1).toLowerCase();	
+		}
+		var t = type(new Number(1));
+		alert("类型为："+ t );
+	</script>		
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		if (!Function.prototype.bind) {
+			Function.prototype.bind = function(thisObj) {
+    				var _func = this, 
+        			_this = thisObj, 
+       				_params = Array.prototype.slice.call(arguments, 1); 
+    				return funtcion(){
+      					_func.apply(_this, _params);
+    				}
+  			}
+		}
+	</script>
+</body>
+</html>

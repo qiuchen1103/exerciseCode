@@ -1,0 +1,51 @@
+/*头部开始*/
+header{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-family:Arial;
+}
+header #newGameButton{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	padding:5px 5px;
+    background-color:#8f7a66;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+}
+header #newGameButton:hover{
+    background-color:#9f8b77;
+}
+/*头部结束*/
+
+/*主体开始*/
+#grid-container{
+    width:460px;
+    height:460px;
+    padding:20px;
+    margin:30px auto;
+    background-color:#bbada0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.grid-cell{
+    width:100px;
+    height:100px;
+    border-radius: 6px;
+    background-color:#ccc0b3;
+    position: absolute;
+}
+.number-cell{
+	border-radius: 6px;
+	position: absolute;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 100px;
+	text-align: center;
+}
+
+/*主体结束*/

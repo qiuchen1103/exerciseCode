@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>控制DIV属性</title>
+	<style>
+		#outer{width:500px;margin:0 auto;padding:0;text-align:center;}
+		#div1{width:100px;height:100px;background:black;margin:10px auto;display:block;}
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<input type="button" value="变宽" oattr="width" oval="200px">
+		<input type="button" value="变高" oattr="height" oval="200px">
+		<input type="button" value="变色" oattr="background" oval="red">
+		<input type="button" value="隐藏" oattr="display" oval="none">
+		<input type="button" value="重置" oattr="display" oval="block">
+		<div id="div1"></div>
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+			var div1 = document.getElementById("div1");
+			var inputs = document.getElementsByTagName("input");
+			for (var i = inputs.length - 1; i >= 0; i--) {
+				inputs[i].index = i;				
+				inputs[i].onclick = function() {
+					if (inputs[this.index].oattr) {	
+						var oattr = inputs[this.index].oattr;					
+						var oval = inputs[this.index].oval;
+					} else {
+						var oattr = inputs[this.index].getAttribute("oattr");
+						var oval = inputs[this.index].getAttribute("oval");
+					}
+					changeStyle(div1, oattr, oval);
+				};
+			}
+		};
+		var changeStyle = function(elem, attr, value) {
+			elem.style[attr] = value;
+		};
+		
+
+	</script>
+</body>
+</html>

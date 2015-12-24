@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+h1{
+	color:blue;
+}
+h2{
+	font-size:14px;
+}
+#p1{
+	font-size:12px;
+	color:yellow;
+	background-color:black;
+}
+img{
+	border:2px;
+	border-color:red;
+}
+#task5{
+	text-indent:-2em;
+	text-transform:lowercase;
+	text-decoration:underline;
+	text-align:center;
+	word-spacing:50px;
+	color:red;
+	line-height:2em;
+	font:oblique 12px/1.5em Microsoft Yahei;
+}
+#task60101{
+	background-color:red;
+	width:960px;
+	margin:auto;
+}
+#task60102{
+	background-color:red;
+	width:960px;
+	
+}
+#task602{
+	border-style:solid;
+	border-radius:90px;
+}
+#task60301A{
+	background-color:blue;
+	width:100px;
+	float:left;
+}
+#task60301B{
+	background-color:red;
+}
+#task60302{
+	position:relative;
+}
+#task60302A{
+	background-color:blue;
+	width:100px;
+	position:absolute;
+	
+}
+#task60302B{
+	background-color:red;
+	margin-left:100px;
+	
+}
+#task60401{
+	position:relative;
+}
+#task60401A{
+	background-color:blue;
+	width:100px;
+	float:left;	
+}
+#task60401B{
+	background-color:red;
+	margin-left:100px;
+		
+}
+#task60401C{
+	background-color:yellow;
+	width:100px;
+	float:right;
+}
+#task60401{
+	position:relative;
+}
+#task60402A{
+	background-color:blue;
+	width:100px;
+	position:absolute;
+}
+#task60402B{
+	background-color:red;
+	margin-left:100px;
+		
+}
+#task60402C{
+	background-color:yellow;
+	width:100px;
+    float:right;
+}
+#task605{
+	max-width:1000px;
+	background-color:red;
+	overflow:auto;
+}
+.task605A{
+	width:200px;
+	background-color:blue;
+	float:left;
+	margin:5px;
+}

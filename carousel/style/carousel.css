@@ -1,0 +1,67 @@
+		body,ul,ol{
+			margin:0;
+			padding:0;
+		}
+		h3{
+			width: 150px;
+			margin: 10px auto 0 auto;
+			text-align: center;
+		}
+		li{ 
+			list-style:none;
+		}
+		img{ 
+			border:none; 
+			vertical-align:top; /*垂直对齐*/
+		}
+		#normal,#fadein,#fadeoutin,#scroll,#autoscroll{
+			width:470px;
+			height:150px; 		
+			position:relative;  /*给图片和指示器*/
+			margin:30px auto; 
+			overflow:hidden;    /*隐藏非当前图片*/
+		}
+		/*图片*/
+		ul{ 
+			width:470px; 
+			position:absolute;
+			left:0; 
+			top:0; 
+			z-index:1;
+		}
+		ul li{
+			width:470px; 
+			display:none;    /*隐藏全部图片(不占位)*/
+		}
+		#fadeoutin ul li{
+			position:absolute;  /*必须，否则淡出淡入效果被延迟*/
+			top:0; 
+			left:0;
+			opacity:0;
+		}
+		#scroll ul li,#autoscroll ul li{
+			display: block;
+		}
+		/*指示器*/
+		ol{
+			z-index:2; 
+			width:120px; 
+			position:absolute;
+			right:10px; 
+			bottom:10px;
+		}
+		ol li{ 
+			width:20px;
+			height:20px; 
+			float:left;
+			margin:0 2px; 
+			display:inline-block; 
+			background:#fff; 
+			color:#f60; 
+			line-height:20px; 
+			text-align:center;
+		}
+		ol .active{ 
+			background:#f60; 
+			color:#fff;
+		}

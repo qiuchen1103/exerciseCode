@@ -1,0 +1,118 @@
+/*用于图片源*/
+.X{
+	display: inline-block;
+	width: 9px;
+	height: 9px;	
+	background: url(../images/icon.png) -10px -5px no-repeat;
+}
+
+/*登录框开始*/
+#login #submit{
+	display: inline-block;
+	width: 295px;
+	height: 48px;
+	background: url(../images/icon.png) -10px -91px no-repeat;
+}
+/*登录框结束*/
+
+/*头部开始*/
+#header .search{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/icon.png) -10px -25px no-repeat;
+}
+/*头部结束*/
+
+/*轮播开始*/
+@media screen and (min-width: 1205px){
+	#carousel{
+		width: 100%;
+	}
+	#carousel img{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 1615px){
+	#carousel{
+		width: 1615px;
+	}
+	#carousel img{
+		width: 1615px;
+	}
+}
+@media screen and (max-width: 1205px){
+	#carousel{
+		width: 1205px;
+	}
+	#carousel img{
+		width: 1205px;
+	}
+}
+/*轮播结束*/
+
+/*简介开始*/
+#introduce [class^=introImg]{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: url(../images/icon.png) no-repeat;
+}
+#introduce .introImg1{
+	background-position: -35px -5px;
+}
+#introduce .introImg2{
+	background-position: -120px -5px;
+}
+#introduce .introImg3{
+	background-position: -205px -5px;
+}
+/*简介结束*/
+
+/*工作环境开始*/
+@media screen and (min-width: 1205px){
+	#workEnv{
+		width: 100%;
+	}
+}
+@media screen and (min-width: 1615px){
+	#workEnv{
+		width: 1615px;
+	}
+}
+@media screen and (max-width: 1205px){
+	#workEnv{
+		width: 1205px;
+	}
+}
+#workEnv .workImg{
+	display: inline-block;
+	width: 100%;
+	height:220px;
+	background: url(../images/banner.jpg) center no-repeat;
+}
+/*工作环境结束*/
+
+/*课程列表开始*/
+#course .count{
+	display: inline-block;
+	width: 11px;
+	height: 13px;
+	background: url(../images/icon.png) -21px -4px no-repeat;
+}
+#course #videoImg{
+	display: inline-block;
+	height: 110px;
+	background: url(../images/video.png) center 0 no-repeat;
+}
+
+/*课程列表结束*/
+
+/*尾部开始*/
+#footer .weibo{
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	background: url(../images/icon.png) -10px -50px no-repeat;
+}
+/*尾部结束

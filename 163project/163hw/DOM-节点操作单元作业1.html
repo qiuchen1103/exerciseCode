@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">       
+    <title>Insert title here</title>
+</head>
+<body>
+    <div id="example">
+   		<p id="p1" class="aaa bbb"/>
+    	<p id="p2" class="aaa ccc"/>
+    	<p id="p3" class="bbb ccc"/>
+    </div>
+
+  	<script type="text/javascript">
+
+   		function getElementsByClassName(element.names) {
+    		var root = document.getElementById("element");
+    		if (root.getElementsByClassName) {
+        		return root.getElementsByClassName(names);
+    		}else {
+        		var elements = root.getElementsByTagName("*");
+        		var result =[];
+        		for (var i = 0;i < elements.length;i++) {
+            		if (hasClassName(element[i],names)) {
+                	result.push(element[i]);
+            		}
+        		}
+        	return result;
+    		}
+		}
+
+		function hasClassName(ele,cls) { 
+			return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)')); 
+		}	
+  	</script>
+</body>
+</html>

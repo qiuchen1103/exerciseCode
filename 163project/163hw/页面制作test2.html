@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<style type="text/css">
+		h1{
+			font: bold 14px/16px "microsoft yahei";
+			margin: 0 0 15px 0;
+		}
+		label{
+			display: inline-block;
+			width: 60px;
+			font: 12px "宋体";
+			vertical-align: middle;
+		}
+		#username,#password{
+			box-sizing: border-box;
+			width: 200px;
+			height: 20px;
+			padding: 0;
+			border: 1px solid #ddd;
+			margin-bottom: 15px;
+		}
+		[type=submit]{
+			margin-left: 70px;
+			width: 40px;
+			height: 20px;
+			padding: 0;
+			background-color: blue;
+			color: #fff;
+			font: 12px "宋体";
+			text-align: center;
+			vertical-align: middle;
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>登陆网易通行证</h1>
+	<form method="post" action="/login">
+		<label for="username">用户名：</label>
+		<input type="text" name="username" id="username">
+		<br>
+		<label for="password">密码：</label>
+		<input type="password" name="password" id="password"> 
+		<br>
+		<input type="submit" value="登录" name="submit">
+	</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>select</title>
+	<style type="text/css">
+		body{
+			font: 12px "宋体";
+			color: #000;
+		}
+		input,li,select{
+			border: 1px solid #ddd;	
+		}
+		input{
+			display: block;
+			width: 50px;
+			height: 28px;
+			background-color: #eee;
+		}
+		ul{
+			margin: 1px 0 0 0;
+			padding: 0;		
+		}
+		li{
+			display: block;
+			width: 90px;
+			height: 30px;
+			margin: 0;
+			padding: 0 10px;
+			list-style: none;
+			text-align: center;
+		}
+		li:hover{
+			background-color: #ddd;
+		}
+		a{
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			padding: 0;
+			text-decoration: none;
+			color: #000;
+		}
+		select{
+			height: 30px;
+			background-color: #fff;
+			padding: 0 10px;
+			margin: 1px 0 0 0;
+		}
+		select:hover{
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<input type="button" value="按钮" name="button">
+		<ul>
+			<li><a href="#">下拉菜单项</a></li>
+			<li class="hidden"><a href="#">下拉菜单项</a></li>
+			<li class="hidden"><a href="#">下拉菜单项</a></li>
+			<li class="hidden"><a href="#">下拉菜单项</a></li>
+		</ul>
+		<select>
+			<option value="1"><span>下拉菜单项</span></option>
+			<option value="2"><span>下拉菜单项</span></option>
+			<option value="3"><span>下拉菜单项</span></option>
+			<option value="4"><span>下拉菜单项</span></option>
+		</select>
+	</form>
+</body>
+</html>

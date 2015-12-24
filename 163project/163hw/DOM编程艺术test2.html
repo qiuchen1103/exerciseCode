@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">       
+    <title>Insert title here</title>
+</head>
+<body>
+    <select name="year" id="year">
+        <option value="0">--</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+    </select>年
+    <select name="month" id="month">
+        <option value="0">--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>月
+    <select name="date" id="date">
+        <option value="0">--</option>
+    </select>日
+
+    <script type="text/javascript">
+   /*
+    * javascript级联选择日期(最常用的网站选择日期样式)
+    * 设计和操做过程可能出现的问题:
+    *    1 根据年份和月份才会生成日期的下拉列表
+    *    2 每次点击年份和月份下拉列表,日期会重复添加,所以要清空当前的日期列表
+    *    3 body中的select和option标签,如果没有放在一行,清空日期的列表时,会把-请选择年份-
+    *    这个列表清空掉,所以要使用 dateSelect.options,只获取option标签
+    */
+   window.onload = function(){
+    //获取年月份3个对象
+    var yearSelect = document.getElementById("year");
+    var monthSelect = document.getElementById("month");
+    var dateSelect = document.getElementById("date");
+   
+    //生成年份和月份下拉列表
+    // genarateYear();
+    // genarateMonth();
+    //generateDate();
+    //alert(genarateMonth());
+   
+    //当年份和月份下拉列表被点击时,生成日期
+    yearSelect.onchange = generateDate;
+    monthSelect.onchange = generateDate;
+   
+    if(yearSelect.value == 0) {
+    	monthSelect.value = 0;
+    }
+
+
+    //生成日期
+    function generateDate(){
+    
+     //获取dateSelecte中的所有option,循环遍历,删除(解决日期重复的问题)
+     
+     var optionDate = dateSelect.options;
+     for(var i = 1; i < optionDate.length; i++){
+      dateSelect.removeChild(optionDate[i--]);
+     }
+    
+     // 获取当前选中的年份和月份
+     var year = yearSelect.value;    
+     var month = monthSelect.value;
+     
+
+     if(year == 0 && month == 0) return;// “年”或“月”发生变化且为有效值时，“日”下拉选择框显示相应的项。
+
+    
+     // 计算该年该月有多少天
+     var days = 0;
+     if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+     	days = 31;
+     }
+     else if (month == 2) {
+     	days = (year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0) ? 29 : 28;
+     }
+     else {
+     	days = 30;
+     }
+     
+
+
+     // 创建option, 添加到dateSelect
+      for(var i = 1; i <= days; i++){
+      	var option = document.createElement("option");
+      	option.value = i;
+      	option.innerHTML = i;
+      	dateSelect.appendChild(option);
+      }
+    }
+   
+  
+
+
+    // function genarateYear(){
+    //  var currentYear = new Date().getFullYear();
+    //  for(var i = currentYear; i > currentYear - 150; i--){
+    //   var option = document.createElement("option");
+    //   option.value = i;
+    //   option.innerHTML = i;
+    //   yearSelect.appendChild(option);
+    //  }
+    
+    // }
+   
+    
+    // function genarateMonth(){
+    //  for(var i = 1; i <= 12; i++){
+    //   var option = document.createElement("option");
+    //   option.value = i;
+    //   option.innerHTML = i;
+    //   monthSelect.appendChild(option);
+    //  }
+    // }
+   
+   }
+  </script>
+</body>
+</html>

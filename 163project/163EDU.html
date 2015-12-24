@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!-- 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"> -->
+	<title>网易教育产品部</title>
+	<link rel="stylesheet" type="text/css" href="style/img.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	
+</head>
+<body>
+	<div id="mask"></div>
+
+	<div id="loginPos">
+		<form id="login" name="login">
+			<h6>登录网易云课堂</h6>
+			<span id="closeLog" class="X" title="关闭"></span>
+			<input id="username" type="text" name="userName" placeholder=" 账号">
+			<input id="password" type="password" name="password" placeholder=" 密码">
+			<div id="result"></div>
+			<a id="submit">登 录</a>
+		</form>
+	</div>
+
+	<div id="videoPos">	
+		<a id="closeVideo"><span class="X"></span>关闭视频</a>
+		<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width="500px" height="300px" controls="controls">
+			您的浏览器不支持 HTML5&lt;video&gt;标签。			
+		</video>	
+	</div>
+
+	<div id="tip">
+		<p>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！</p>
+		<a href="http://study.163.com/smartSpec/intro.htm">立即查看&gt;</a>
+		<a id="noAlert"><span class="X"></span> 不再提醒</a>
+	</div>
+
+	<header id="header">
+		<h1><span class="head1">EDU</span><span class="head2"> | 网易教育产品部</span></h1>
+		<a id="focus"><span> + </span>关注</a>
+		<span id="followed">√ 已关注 | <a href="">取消</a></span>
+		<p>粉丝<span> 45</span></p>
+		<nav>
+			<ol>
+				<li><a href="http://open.163.com/" target="_blank">网易公开课</a></li>
+				<li><a href="http://study.163.com/" target="_blank">云课堂</a></li>
+				<li><a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a></li>
+				<a class="search" href=""></a>
+			</ol>
+		</nav>
+	</header>
+
+	<div id="carousel">
+		<a href="http://open.163.com/" target="_blank" style="display:block;opacity:1;"><img src="images/banner1.jpg"></a>
+		<a href="http://study.163.com/" target="_blank"><img src="images/banner2.jpg"></a>
+		<a href="http://www.icourse163.org/" target="_blank"><img src="images/banner3.jpg"></a>
+		<ol>
+	    	<li class="active"></li>
+	        <li></li>
+	        <li></li>
+	    </ol>
+	</div>
+
+	<article id="introduce">
+		<section>
+			<span class="introImg1"></span>
+			<div>
+				<h2>网易公开课</h2>
+				<p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+				<a href="http://open.163.com/" target="_blank">了解更多&gt;</a>
+			</div>
+		</section>
+		<section>
+			<span class="introImg2"></span>
+			<div>
+				<h2>云课堂</h2>
+				<p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程，创新的个性化学习体验，自由开放的交流互动环境。</p>
+				<a href="http://study.163.com/" target="_blank">了解更多&gt;</a>
+			</div>
+		</section>
+		<section class="lastSection">
+			<span class="introImg3"></span>
+			<div>
+				<h2>中国大学MOOC</h2>
+				<p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人，都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+				<a href="http://www.icourse163.org/" target="_blank">了解更多&gt;</a>
+			</div>
+		</section>
+	</article>
+
+	<div id="workEnv">
+		<span class="workImg"></span>
+	</div>
+
+	<div id="course">
+		<div class="main">
+			
+			<div class="tag">
+				<a id="tabDesi" class="selection">产品设计</a>
+				<a id="tabLang">编程语言</a>
+			</div>
+
+			<section class="courseList">
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>
+				<div class="courseBox">
+					<span class="courseImg"></span>
+					<h4 class="courseH"></h4>
+					<span class="author"></span>
+					<div class="countAll">
+						<span class="count"></span>
+						<span class="learnerCount"></span>
+					</div>
+					<b>￥</b>
+					<div class="hoverBox">
+						<div class="hoverBoxTop">
+							<span class="hoverBoxCourseImg"></span>							
+							<h4 class="hoverH"></h4>
+							<div class="hoverBoxCountAll">
+								<span class="count indent"></span>
+								<span class="hoverBoxLearnerCount"></span><span>人在学</span>
+							</div>
+							<span class="indent height">发布者：</span><span class="hoverBoxAuthor"></span><br/>
+							<span class="indent height">分类：<span class="categoryName"></span></span>			
+						</div>
+						<div class="clear"></div>			
+						<p class="description"></p>
+					</div>
+				</div>			
+			</section>
+
+			<nav>
+				<ol>
+				</ol>
+			</nav>
+
+			<div class="clear"></div>
+		</div>
+
+
+		<div class="side">
+			<div class="video">
+				<h3>机构介绍</h3>
+				<p>观看下面的视频来了解吧：</p>
+				<span id="videoImg"></span>
+			</div>
+
+			<div id="rankingList">
+				<h3>最热排行</h3>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="rankingBox">
+					<span class="courseImgMini"></span>
+					<h4></h4>
+					<div class="countBox">
+						<span class="count"></span>
+						<span class="countAll"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="margin">
+			<div class="left">			
+				<h1><span class="head1">EDU</span><span class="head2"> | 网易教育产品部</span></h1>
+				<p>&copy;2014 icourse163.org 浙ICP备0811476号-1</p>
+				<p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+			</div>
+			<div class="right">
+				<ol>
+					<li>
+						<ol>
+							<li>友情链接：</li>
+							<li><a href="">网易公开课</a></li>
+							<li><a href="">网易云课堂</a></li>
+							<li><a href="">中国大学MOOC</a></li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>我们：</li>
+							<li><a href="">关于</a></li>
+							<li><a href="">联系</a></li>
+							<li><a href="">关注 <span class="weibo"></span></a></li>
+						</ol>
+						
+					</li>
+					<li>
+						<ol>
+							<li>更多：</li>
+							<li><a href="">常见问题</a></li>				
+							<li><a href="">意见反馈</a></li>
+						</ol>
+					</li>
+				</ol>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
